@@ -19,6 +19,11 @@ body {
   height: fit-content;
 }
 
+.zoomIn {
+  width: 200%;
+  height: 200%;
+}
+
 @media (max-width: 425px) {
   .galerie {
     display: block;
