@@ -5,11 +5,12 @@ function ajouterPhotos() {
         let hauteur = Math.floor(Math.random() * 2) + 2
         let largeur = Math.floor(Math.random() * 2) + 2
         let random = Math.floor(Math.random() * 600) + 2
+        let sur = Math.floor(Math.random() * 50) + 2
         
         document.getElementById("galerie").innerHTML += `
             <div class="mx-auto my-lg-2 my-5 photo">
-                <a href="https://picsum.photos/id/${random}/1000/1000" onerror="this.src='https://picsum.photos/id/${Math.floor(Math.random() * 50) + 2}/1000/1000';" data-lightbox="galerie" data-title="Photo par Claire Montfort" class="zoomOut">
-                    <img src="https://picsum.photos/id/${random}/${hauteur}00/${largeur}00" onerror="this.src='https://picsum.photos/id/${Math.floor(Math.random() * 50) + 2}/${hauteur}00/${largeur}00';">
+                <a href="https://picsum.photos/id/${random}/1000/1000" onerror="this.src='https://picsum.photos/id/${sur}/1000/1000';" data-lightbox="galerie" data-title="Photo par Claire Montfort" class="zoomOut">
+                    <img src="https://picsum.photos/id/${random}/${hauteur}00/${largeur}00" onerror="this.src='https://picsum.photos/id/${sur}/${hauteur}00/${largeur}00';">
                 </a>
             </div>
         `
