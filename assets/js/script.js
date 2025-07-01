@@ -9,7 +9,7 @@ function ajouterPhotos() {
         
         document.getElementById("galerie").innerHTML += `
             <div class="mx-auto my-lg-2 my-5 photo">
-                <a href="https://picsum.photos/id/${random}/1000/1000" onerror="this.src='https://picsum.photos/id/${sur}/1000/1000';" data-lightbox="galerie" data-title="Photo par Claire Montfort" class="zoomOut">
+                <a href="https://picsum.photos/id/${random}/1000/1000" onerror="this.src='https://picsum.photos/id/${sur}/1000/1000';" data-lightbox="galerie" data-title="Photo par Claire Montfort">
                     <img src="https://picsum.photos/id/${random}/${hauteur}00/${largeur}00" onerror="this.src='https://picsum.photos/id/${sur}/${hauteur}00/${largeur}00';">
                 </a>
             </div>
@@ -26,4 +26,3 @@ window.addEventListener("scroll", () => {  //S'active avec le scroll
         ajouterPhotos() //On appelle la fonction
     }
 })
-
