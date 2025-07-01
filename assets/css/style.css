@@ -8,15 +8,22 @@ body {
 .galerie {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   width: fit-content;
   gap: 50px;
+}
+
+.maPhoto {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -15px 29px 20px -6px #000000;
+  box-shadow: 0px 10px 13px -7px #000000, -15px 29px 20px -6px #000000;
 }
 
 .photo {
   border: solid 1px black;
   width: fit-content;
   height: fit-content;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -15px 29px 20px -6px #000000;
+  box-shadow: 0px 10px 13px -7px #000000, -15px 29px 20px -6px #000000;
 }
 
 .zoomOut {
@@ -24,7 +31,7 @@ body {
   height: 200rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .galerie {
     display: block;
     gap: 0px;
