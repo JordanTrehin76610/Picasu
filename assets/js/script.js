@@ -22,4 +22,4 @@ window.addEventListener("scroll", () => {  //S'active avec le scroll
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) { // On prend la position de l'utilisateur, on regarde la hauteur de la page et lorsqu'on est a 200px de sa fin
         ajouterPhotos() //On appelle la fonction
     }
-});
+})
