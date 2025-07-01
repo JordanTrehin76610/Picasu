@@ -26,3 +26,4 @@ window.addEventListener("scroll", () => {  //S'active avec le scroll
         ajouterPhotos() //On appelle la fonction
     }
 })
+
